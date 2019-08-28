@@ -279,9 +279,7 @@ impl Country {
     pub const GB: Self = Self(76);
     pub const FR: Self = Self(74);
     pub const DE: Self = Self(56);
-
-    // pub const UNKNOW: Self = Self(255);
-
+    
     #[inline]
     pub fn from_index(idx: u8) -> Self {
         assert!((idx as usize) < COUNTRY_CODES_LEN);
@@ -300,23 +298,11 @@ impl Country {
 
     #[inline]
     pub fn code(&self) -> &'static str {
-        // if self == &Self::UNKNOW {
-        //     "N/A"
-        // } else {
-        //     COUNTRY_CODES[self.0 as usize].0
-        // }
-
         COUNTRY_CODES[self.0 as usize].0
     }
 
     #[inline]
     pub fn full_name(&self) -> &'static str {
-        // if self == &Self::UNKNOW {
-        //     "N/A"
-        // } else {
-        //     COUNTRY_CODES[self.0 as usize].1
-        // }
-
         COUNTRY_CODES[self.0 as usize].1
     }
 }
