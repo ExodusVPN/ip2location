@@ -5,6 +5,15 @@ ip2location
 
 .. contents::
 
+Build
+----------
+
+.. code:: bash
+
+    cargo build --release
+    cp target/release/ip2location .
+    ./ip2location 8.8.8.8
+
 
 数据来源
 ----------
