@@ -5,7 +5,7 @@ use std::str::FromStr;
 // Country Code List: ISO 3166-1993 (E)
 // 
 // Download from: https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes
-const COUNTRY_CODES_LEN: usize = 249;
+pub const COUNTRY_CODES_LEN: usize = 249;
 pub static COUNTRY_CODES: [(&'static str, &'static str); COUNTRY_CODES_LEN] = [
     ("AD", "Andorra"), 
     ("AE", "United Arab Emirates"), 
